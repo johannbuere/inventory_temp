@@ -1,3 +1,5 @@
+127671,Milk,80,55,5,Brand A
 466844,Apples,18.0,25,50,Local Farm 
-862880,Water,12.0,15,34,Spring Water Co 
+862880,Water,12.0,15,500,Spring Water Co 
 1000000,Iphone 69 Pro MAX,1000000.0,1500000,2,Tech Corp
+127671,Milk,89.0,50,5,Brand A

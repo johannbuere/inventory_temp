@@ -17,7 +17,6 @@ public class Homepage extends javax.swing.JFrame {
         menu.addEeventMenuSelected(new EventMenuSelected() {
             @Override
             public void selected(int index) {
-                System.out.println("Selected Index: " + index);
                 if (index == 0) {
                     setForm(new Sales_Form());
                 } else if (index == 1) {
