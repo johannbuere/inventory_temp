@@ -334,6 +334,8 @@ public class Stock_Form extends javax.swing.JPanel {
         setBackground(new java.awt.Color(237, 249, 255));
         setPreferredSize(new java.awt.Dimension(900, 600));
 
+        jPanel2.setBackground(new java.awt.Color(237, 249, 255));
+        jPanel2.setToolTipText("");
         jPanel2.setOpaque(false);
 
         ProductLabel.setFont(new java.awt.Font("Inter", 0, 14)); // NOI18N
@@ -464,7 +466,7 @@ public class Stock_Form extends javax.swing.JPanel {
             }
         });
 
-        NewRadBtn.setFont(new java.awt.Font("Google Sans Display", 0, 12)); // NOI18N
+        NewRadBtn.setBackground(new java.awt.Color(237, 249, 255));
         NewRadBtn.setForeground(new java.awt.Color(0, 0, 0));
         NewRadBtn.setText("New");
         NewRadBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -570,7 +572,7 @@ public class Stock_Form extends javax.swing.JPanel {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(stocks_Table1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 17, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
