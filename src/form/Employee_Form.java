@@ -370,6 +370,7 @@ public class Employee_Form extends javax.swing.JPanel {
         FirstNamelabel.setText("First Name:");
 
         EmployeeId.setBackground(new java.awt.Color(255, 255, 255));
+        EmployeeId.setForeground(new java.awt.Color(0, 0, 0));
         EmployeeId.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         EmployeeId.setCaretColor(new java.awt.Color(255, 255, 255));
         EmployeeId.addActionListener(new java.awt.event.ActionListener() {
