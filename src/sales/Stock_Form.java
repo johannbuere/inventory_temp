@@ -98,14 +98,14 @@ public class Stock_Form extends javax.swing.JPanel {
         try {
             // Validate numeric fields
             if (!validateNumericFields()) {
-                return; // If validation fails, stop further processing
+                return; 
             }
 
             String productID = ProductIDTxtField.getText().trim();
             String productName = ProductNameTxtField.getText().trim();
-            String productPrice = ProductPriceTxtField.getText().trim(); // Treat as String
-            String ourPrice = ProductOurPriceTxtField.getText().trim(); // Treat as String
-            String quantity = QuantityTxtField.getText().trim(); // Treat as String
+            String productPrice = ProductPriceTxtField.getText().trim(); 
+            String ourPrice = ProductOurPriceTxtField.getText().trim(); 
+            String quantity = QuantityTxtField.getText().trim(); 
             String company = CompanyTxtField.getText().trim();
 
             if (productID.isEmpty() || productName.isEmpty() || company.isEmpty()) {
@@ -146,7 +146,7 @@ public class Stock_Form extends javax.swing.JPanel {
         try {
             // Validate numeric fields
             if (!validateNumericFields()) {
-                return; // If validation fails, stop further processing
+                return; 
             }
 
             String productName = ProductNameTxtField.getText().trim();
