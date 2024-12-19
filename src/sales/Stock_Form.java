@@ -347,6 +347,7 @@ public class Stock_Form extends javax.swing.JPanel {
         ProductNameLabel.setText("Product Name:");
 
         ProductIDTxtField.setBackground(new java.awt.Color(255, 255, 255));
+        ProductIDTxtField.setForeground(new java.awt.Color(0, 0, 0));
         ProductIDTxtField.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ProductIDTxtField.setCaretColor(new java.awt.Color(255, 255, 255));
         ProductIDTxtField.addActionListener(new java.awt.event.ActionListener() {
