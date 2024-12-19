@@ -39,8 +39,9 @@ public class Employee_Form extends javax.swing.JPanel {
     // Disable Employee ID field and generate new ID when NewRadBtn is selected
     private void handleNewRadioBtn() {
         if (NewRadBtn.isSelected()) {
-            EmployeeId.setEnabled(false);
+            EmployeeId.setText("");            
             EmployeeId.setText(generateEmployeeID());
+            EmployeeId.setEnabled(false);
         } else {
             EmployeeId.setEnabled(true);
             EmployeeId.setText("");
@@ -103,7 +104,6 @@ public class Employee_Form extends javax.swing.JPanel {
             }
         } catch (IOException e) {
             JOptionPane.showMessageDialog(this, "Error updating employee: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -165,7 +165,6 @@ public class Employee_Form extends javax.swing.JPanel {
            JOptionPane.showMessageDialog(this, "Employee added successfully!");
        } catch (IOException e) {
            JOptionPane.showMessageDialog(this, "Error accessing users file: " + e.getMessage());
-           e.printStackTrace();
        }
    }
 
@@ -231,7 +230,6 @@ public class Employee_Form extends javax.swing.JPanel {
             }
         } catch (IOException e) {
             JOptionPane.showMessageDialog(this, "Error deleting employee: " + e.getMessage());
-            e.printStackTrace();
         }
     }
     
@@ -288,7 +286,6 @@ public class Employee_Form extends javax.swing.JPanel {
                 uniqueID[0] = abbreviation + (100000 + new Random().nextInt(900000));
             }
         } catch (IOException e) {
-            e.printStackTrace();
         }
 
         return uniqueID[0];

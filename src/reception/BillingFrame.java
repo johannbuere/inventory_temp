@@ -21,7 +21,7 @@ public class BillingFrame{
 
     //for files handling
     private static final String INVENTORY_FILE = "src/reception/inventory.txt";
-    private static final String ORDERS_FILE = "orders.txt";
+    private static final String ORDERS_FILE = "src/reception/orders.txt";
 
     //constructor
     public BillingFrame(){
@@ -116,10 +116,6 @@ public class BillingFrame{
 
         //make the billing main frame visible
         billingFrame.setVisible(true);
-        
-        
-        //logout
-        logoutButton.addActionListener(click -> logout()); 
     }
 
     //method for styling buttons
@@ -231,8 +227,9 @@ public class BillingFrame{
         billingFrame.dispose();
         new ReceptionistDashboard();
     }
-    private void logout() {
-        billingFrame.dispose(); // Close ReceptionistDashboard
-        new login.Login().setVisible(true); // Open Login screen
+
+    //main method (used for testing - delete nalangs)
+    public static void main(String[] args){
+        new BillingFrame();
     }
 }

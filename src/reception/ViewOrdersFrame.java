@@ -6,13 +6,13 @@ import java.awt.*;
 import java.io.*;
 
 public class ViewOrdersFrame{
-    private JFrame viewOrdersFrame;
-    private JButton backButton;
-    private JButton logoutButton;
-    private JComboBox<String> orderIdComboBox;
-    private JTable ordersTable;
-    private JLabel totalPriceLabel;
-    private DefaultTableModel tableModel;
+    private final JFrame viewOrdersFrame;
+    private final JButton backButton;
+    private final JButton logoutButton;
+    private final JComboBox<String> orderIdComboBox;
+    private final JTable ordersTable;
+    private final JLabel totalPriceLabel;
+    private final DefaultTableModel tableModel;
 
     public ViewOrdersFrame(){
         //main frame of the view orders setup

@@ -11,21 +11,20 @@ import login.Login;
 
 public class StockTrack {
     public static void main(String[] args) {
-        // Create and show the Login frame
         Login loginFrame = new Login();
         loginFrame.setVisible(true);
 
         // Wait until Login frame is closed
         while (loginFrame.isDisplayable()) {
             try {
-                Thread.sleep(100); // Small delay to avoid busy-waiting
+                Thread.sleep(100); // Small delay
             } catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
                 return;
             }
         }
 
-        // Check login status and role after the login frame closes
+        // check login status and role bago bumukas
         if (loginFrame.isLoginSuccessful()) {
             String role = loginFrame.getRole();
 
@@ -34,7 +33,7 @@ public class StockTrack {
                 if (null == role) {
                     System.out.println("Invalid role. Exiting program.");
                 } else switch (role) {
-                    case "manager" -> new Homepage().setVisible(true); // Open the PanelBorder for Admin        // Check login status and role after the login frame closes
+                    case "manager" -> new Homepage().setVisible(true); // Open the PanelBorder for Admin      
 
                     case "receptionist" -> new ReceptionistDashboard(); // Open Reception for Receptionist
                     default -> System.out.println("Invalid role. Exiting program.");
