@@ -17,7 +17,7 @@ public class StockTrack {
         // wait login dito
         while (loginFrame.isDisplayable()) {
             try {
-                Thread.sleep(100); // Small delay
+                Thread.sleep(100); // Small delay lang
             } catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
                 return;
@@ -33,7 +33,7 @@ public class StockTrack {
                 if (null == role) {
                     System.out.println("Invalid role. Exiting program.");
                 } else switch (role) {
-                    case "manager" -> new Homepage().setVisible(true); // Open the PanelBorder for Admin      
+                    case "manager" -> new Homepage().setVisible(true); // Open the PanelBorder for Manager      
 
                     case "receptionist" -> new ReceptionistDashboard(); // Open Reception for Receptionist
                     default -> System.out.println("Invalid role. Exiting program.");
