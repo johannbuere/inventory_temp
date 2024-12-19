@@ -14,7 +14,7 @@ public class StockTrack {
         Login loginFrame = new Login();
         loginFrame.setVisible(true);
 
-        // Wait until Login frame is closed
+        // wait login dito
         while (loginFrame.isDisplayable()) {
             try {
                 Thread.sleep(100); // Small delay
