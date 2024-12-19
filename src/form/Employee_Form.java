@@ -39,8 +39,10 @@ public class Employee_Form extends javax.swing.JPanel {
     // Disable Employee ID field and generate new ID when NewRadBtn is selected
     private void handleNewRadioBtn() {
         if (NewRadBtn.isSelected()) {
-            EmployeeId.setText("");            
-            EmployeeId.setText(generateEmployeeID());
+            EmployeeId.setText("");
+            String newEmployeeID = generateEmployeeID();
+            EmployeeId.setText(newEmployeeID);
+            
             EmployeeId.setEnabled(false);
         } else {
             EmployeeId.setEnabled(true);
